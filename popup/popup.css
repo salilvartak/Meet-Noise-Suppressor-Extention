@@ -1,0 +1,14 @@
+.popup-container {
+  padding: 16px;
+  width: 220px;
+  font-family: sans-serif;
+  text-align: center;
+}
+button {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
