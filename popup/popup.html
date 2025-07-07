@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
   <title>Meet Noise Suppressor</title>
   <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-  <div class="popup-container">
-    <h2>Noise Suppression</h2>
-    <button id="toggleSuppression">Start Suppression</button>
+  <div class="container">
+    <h1>Noise Suppressor</h1>
+    <div class="toggle-switch">
+      <input type="checkbox" id="suppressionToggle" class="toggle-input">
+      <label for="suppressionToggle" class="toggle-label"></label>
+    </div>
     <p id="status">Status: <span>Inactive</span></p>
   </div>
   <script src="popup.js"></script>

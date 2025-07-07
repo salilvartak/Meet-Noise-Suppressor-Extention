@@ -1,14 +1,56 @@
-.popup-container {
-  padding: 16px;
-  width: 220px;
+body {
   font-family: sans-serif;
-  text-align: center;
+  width: 250px;
+  padding: 10px;
 }
-button {
-  background-color: #1a73e8;
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 6px;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.toggle-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-label {
+  position: absolute;
   cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.toggle-label:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+.toggle-input:checked + .toggle-label {
+  background-color: #2196F3;
+}
+
+.toggle-input:checked + .toggle-label:before {
+  transform: translateX(26px);
 }
